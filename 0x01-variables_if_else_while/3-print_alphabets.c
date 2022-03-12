@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - prints alphabets lower and uppercase
+ *main - prints lower and uppercase alphabets
  *followed by a new line
- *return: always 0
+ *Return: always 0
  */
 int main(void)
 {
