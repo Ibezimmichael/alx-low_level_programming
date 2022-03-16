@@ -12,9 +12,9 @@ while (a <= 10)
 {
 for (i = 'a'; i <= 'z'; i++)
 {
-putchar(i);
+_putchar(i);
 }
 a++;
-putchar('\n');
+_putchar('\n');
 }
 }
