@@ -1,25 +1,32 @@
 #include "main.h"
+
 /**
- * print_square - prints a square
- *@size: print size
- * Return: Always 0.
+ * print_diagonal - print digonal
+ * @n: input value
+ *
+ * Description: draws a diagonal line on the terminal
+ * Return: Always (0)
  */
 
-void print_square(int size)
+void print_diagonal(int n)
 {
+int count = 0, size;
 
-int i;
-int k;
-
-if (size > 0)
+if (n > 0)
 {
-for (i = 0; i < size; i++)
+while (count < n)
 {
-
-for (k = 0; k < size; k++)
+for (size = 0; size < count; size++)
 {
-_putchar (35);
+_putchar(' ');
 }
-_putchar ('\n');
-
+_putchar('\\');
+_putchar('\n');
+count++;
+}
+}
+else
+{
+_putchar('\n');
+}
 }
