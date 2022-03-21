@@ -21,5 +21,4 @@ int main(void)
 	putchar(2772 - sum);
 	return (0);
 }
-© 2022 GitHub, Inc.
-Terms
+
