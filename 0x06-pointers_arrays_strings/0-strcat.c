@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  *_strcat - concatenate two dtrings
- *@dest: the variable the string will be added unto
- *@src: contains new string to be added
- *Return: always 0
+ *@dest: A pointer to a character that will be changed
+ *@src: A pointer to a character that will also be changed
+ *Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
