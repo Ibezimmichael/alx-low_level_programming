@@ -1,35 +1,44 @@
 #include "main.h"
 /**
- * is_prime_number -  Returns the natural square root of a number.
- * @n: int type
- * Return: char type
- **/
-int is_prime_number(int n)
-{
-if (n <= 1)
-{
-return (0);
-}
-return (is_prime(n, 2));
+ *_evaluate - evaluate function sqrt
+ *@i: interger
+ *@n: interger
+ *Return: evaluate sqrt
+ */
 
+int _evaluate(int i, int n)
+{
+/*Evaluate function*/
+if (n == 0 || n == 1)
+return (n);
+
+else if (i * i < n)
+return (_evaluate(i + 1, n));
+
+else if (i * i == n) /*Condiction base*/
+return (i);
+
+return (-1);
+
+return (-1);
 }
 
 /**
- * is_prime - Entry point
- * Desc: is_prime
- * @n: type int
- * @x: type int
- * Return: Function about prime numbers
- **/
-int is_prime(int n, int x)
+ *_sqrt_recursion - evaluate sqrt
+ *@n: interger
+ *Return: Sgrt_recursion
+*/
+
+int _sqrt_recursion(int n)
 {
-if (x < n)
+int i = 0;
+
+if (i < 0) /*If n is negative*/
+return (-1);
+
+else
 {
-if (n % x == 0)
-{
-return (0);
+return (_evaluate(i, n)); /*Recursive call*/
 }
-return (is_prime(n, x + 1));
-}
-return (1);
+
 }
