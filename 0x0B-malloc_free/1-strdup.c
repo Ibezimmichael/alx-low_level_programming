@@ -19,7 +19,8 @@ if (str == NULL)
 {
 return (NULL);
 }
-for (len = 0; str[len] != '\0')
+len = 0;
+while (str[len] != '\0')
 {
 len++;
 }
